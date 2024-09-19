@@ -1,6 +1,6 @@
-./tutorials/data_scGPT/
-./tutorials/data_scGPT/norman.zip
-./save/
+tutorials/data_scGPT/
+tutorials/data_scGPT/norman.zip
+save/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

@@ -222,6 +222,7 @@ class TransformerGenerator(nn.Module):
         )
         output = {}
         mlm_output = self.decoder(transformer_output, values)
+        
         if self.explicit_zero_prob and do_sample:
             bernoulli = Bernoulli(probs=mlm_output["zero_probs"])
             output["mlm_output"] = bernoulli.sample() * mlm_output["pred"]
